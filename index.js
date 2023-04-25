@@ -48,10 +48,10 @@ function obtenerPares(unArrayDeNumeros) {
 
 //Ejercicio 12
 function pintarArray(unArray) {
-
+    // se puede hacer con metodo filter
 }
 
-//Ejercicio 13 || no funciona
+//Ejercicio 13 | no funciona
 function arrayMapi(unArray, unaFuncion) {
     for (let i = 0; i < unArray.length; i++) {
         unaFuncion(unArray[i])
@@ -106,19 +106,30 @@ function ordenarArray2(unArrayDeNumeros) {
 
 //Ejercicio 24
 function obtenerImpares(unArrayDeNumeros) {
-    for (let i = 0; i < unArrayDeNumeros.length; i++) {
-        if (unArrayDeNumeros[i] / 2 !== 0) {
-            return arrayNumeros
+    let newNumbers = [];
+    for (let i = 0; i < myNumbers.length; i++) {
+        if (myNumbers[i] % 2 !== 0) {
+            newNumbers.push(myNumbers[i]);
         }
     }
+    return newNumbers;
+
 }
 
 //Ejercicio 25
 function sumarArray(unArrayNumerico) {
-
+    let total = 0;
+    for (let i = 0; i < unArrayNumerico.length; i++) {
+        total += myArr[i]
+    }
 }
+
 
 //Ejercicio 26
 function multiplicarArray(unArrayNumerico) {
-
+    let total = 1;
+    for (i = 0; i < myArr.length; i++) {
+        total *= myArr[i];
+    }
+    return total;
 }
